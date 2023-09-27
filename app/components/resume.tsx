@@ -16,7 +16,7 @@ export const Resume = () => {
   return (
     <div>
       <article ref={resumeRef} className="w-[21cm] h-[29.7cm] flex">
-        <aside className="bg-primary/80 basis-2/5 p-4 space-y-6">
+        <aside className="bg-muted basis-2/5 p-4 space-y-6">
           <header>
             <h1 className="text-4xl font-extrabold tracking-tight">
               Jakub Figlak
@@ -73,14 +73,18 @@ export const Resume = () => {
             <h2 className="text-lg font-bold mb-2">Education</h2>
             <ul className="text-sm space-y-2">
               <li>
-                <p>Bachelor of Engineering, Electrotechnics</p>
+                <p className="font-semibold">
+                  Bachelor of Engineering, Electrotechnics
+                </p>
                 <p className="text-primary-foreground text-xs">
                   October 2013 - June 2018, Poznan University of Technology -
                   Poznan, Poland
                 </p>
               </li>
               <li>
-                <p>Master of Engineering, Civil Engineering</p>
+                <p className="font-semibold">
+                  Master of Engineering, Civil Engineering
+                </p>
                 <p className="text-primary-foreground text-xs">
                   October 2008 - June 2013, Poznan University of Technology -
                   Poznan, Poland
@@ -93,7 +97,7 @@ export const Resume = () => {
             <ul className="flex flex-wrap gap-1">
               {technologies.map(({ name, icon }) => (
                 <li key={name}>
-                  <Badge variant="secondary" className="gap-1">
+                  <Badge variant="outline" className="gap-1 bg-white">
                     <Image src={icon} alt={name} className="h-4 w-4" priority />
                     {name}
                   </Badge>
@@ -121,7 +125,7 @@ export const Resume = () => {
             <h2 className="text-xl font-bold uppercase text-foreground">
               Professional experience
             </h2>
-            <Separator className="h-[2px] bg-primary mb-3" />
+            <Separator className="h-[2px] mb-3" />
 
             {jobs.map(({ id, title, time, company, content }, idx) => (
               <div key={id}>

@@ -2,9 +2,9 @@ export const NetguruContent = () => {
   return (
     <ul>
       <li>
-        Developed, maintained, and debugged React and NodeJS applications,
-        spanning static, headless CMS-powered websites to highly interactive web
-        apps.
+        Developed and maintained React and NodeJS applications, spanning static,
+        headless CMS-powered websites (React, Next.js, Gatsby, Contentful) to
+        highly interactive web apps (RedwoodJS, GraphQL, Payload CMS).
       </li>
       <li>
         Led end-to-end product development, making crucial architectural
@@ -13,11 +13,12 @@ export const NetguruContent = () => {
         Engineers.
       </li>
       <li>
-        Implemented data tracking strategies to gain insights into user behavior
-        and enhance retention, fostering collaboration across departments.
+        Implemented data tracking strategies (Mixpanel) to gain insights into
+        user behavior and enhance retention, fostering collaboration across
+        departments.
       </li>
       <li>
-        Spearheaded a significant tech stack unification initiative for a key
+        Pitched a significant tech stack unification initiative for a key
         client, successfully migrating legacy applications to a modern, unified
         stack, resulting in notable performance improvements and cost savings.
       </li>
@@ -26,13 +27,12 @@ export const NetguruContent = () => {
         quality and enhance team productivity.
       </li>
       <li>
-        Orchestrated the Frontend Coffee initiative, facilitating knowledge
-        sharing and technical discussions through department meetings and
-        speaker arrangements.
+        Ran the Frontend Coffee initiative - hosting weekly department meetings
+        meant for knowledge sharing and technical discussions.
       </li>
       <li>
         Collaborated as a co-author for the Frontend Digest, a weekly blog post
-        curating insightful frontend-related articles and resources. -{" "}
+        collecting insightful frontend-related articles and resources. -{" "}
         <a href="https://frontenddigest.substack.com/">
           https://frontenddigest.substack.com/
         </a>

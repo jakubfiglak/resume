@@ -26,7 +26,9 @@ export const Job = ({
       <div className="flex items-center gap-1 text-xs text-primary-foreground mt-1 mb-4">
         <CalendarDaysIcon className="h-4 w-4" /> {time}
       </div>
-      <div className="[&_ul]:list-disc [&_ul]:list-inside">{children}</div>
+      <div className="[&_ul]:list-disc [&_ul]:list-inside text-foreground [&_ul]:space-y-1">
+        {children}
+      </div>
     </div>
   );
 };
