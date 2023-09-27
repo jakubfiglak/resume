@@ -103,7 +103,7 @@ export const jobs: Array<Job> = [
   {
     id: "2",
     title: "Web Developer, Tech Lead",
-    company: { name: "Playaker Pro", url: "https://playaker.pro" },
+    company: { name: "Playmaker Pro", url: "https://playaker.pro" },
     time: "May 2020 - December 2022",
     content: <PlaymakerContent />,
   },
