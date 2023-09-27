@@ -59,7 +59,7 @@ export const Resume = () => {
           </section>
           <section>
             <h2 className="text-lg font-bold mb-2">Summary</h2>
-            <p className="text-sm text-justify">
+            <p className="text-sm">
               Skilled Frontend developer with 3+ years of professionale
               experience building cutting-edge web applications for startups and
               corporate clients. Proficient with CSS and JavaScript frameworks,
