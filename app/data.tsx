@@ -14,6 +14,11 @@ import postgres from "./icons/postgresql.svg";
 import react from "./icons/react.svg";
 import sanity from "./icons/sanity.svg";
 import redwood from "./icons/redwoodjs.svg";
+import type { JobProps } from "@/components/job";
+import type { ReactNode } from "react";
+import { NetguruContent } from "./components/netguru-content";
+import { PlaymakerContent } from "./components/playmaker-content";
+import { WegaContent } from "./components/wega-content";
 
 export const technologies = [
   {
@@ -79,5 +84,37 @@ export const technologies = [
   {
     name: "PostgreSQL",
     icon: postgres,
+  },
+];
+
+type Job = Pick<JobProps, "title" | "time" | "company"> & {
+  id: string;
+  content: ReactNode;
+};
+
+export const jobs: Array<Job> = [
+  {
+    id: "1",
+    title: "Frontend Developer",
+    company: { name: "Netguru", url: "https://www.netguru.com/" },
+    time: "October 2021 - Ongoing",
+    content: <NetguruContent />,
+  },
+  {
+    id: "2",
+    title: "Web Developer, Tech Lead",
+    company: { name: "Playaker Pro", url: "https://playaker.pro" },
+    time: "May 2020 - December 2022",
+    content: <PlaymakerContent />,
+  },
+  {
+    id: "3",
+    title: "Product Manager",
+    company: {
+      name: "WEGA Elektronik",
+      url: "https://www.wega-elektronik.pl/pl/home",
+    },
+    time: "September 2013 - September 2021",
+    content: <WegaContent />,
   },
 ];
